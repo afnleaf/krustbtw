@@ -1,0 +1,24 @@
+[package]
+name = "minidb"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+bincode = "1"
+byteorder = "1.2"
+crc = "1.7"
+serde = "1"
+serde_derive = "1"
+
+[lib]
+name = "libminidb"
+path = "src/lib.rs"
+
+[[bin]]
+name = "minidb_mem"
+path = "src/minidb_mem.rs"
+
+[[bin]]
+name = "minidb_disk"
+path = "src/minidb_disk.rs"
+
